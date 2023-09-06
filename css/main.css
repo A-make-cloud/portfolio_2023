@@ -1,0 +1,2276 @@
+/*=====================================================
+               Lio Website Stylesheet
+                Body Core Stylesheet
+======================================================*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    position: relative;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: transparent;
+}
+
+.container {
+    margin: 0 auto
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0px;
+    padding: 0px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+li {
+    display: list-item;
+}
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    color: black !important;
+    background-color: #ffb700 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin: 0
+}
+
+.chevron {
+    width: 63px;
+    height: 62px;
+    padding: 0;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 100px;
+    background: #ffb700;
+}
+
+.chevronTop {
+    width: 63px;
+    height: 62px;
+    padding: 0;
+    /* font-size: 24px; */
+    cursor: pointer;
+    border-radius: 100px;
+    background: #ffb700;
+}
+
+.chevron:hover {
+    background: rgba(255, 255, 0, 0.4);
+}
+
+.chevron span {
+    font-size: 57px;
+    font-weight: 300;
+    color: black;
+    padding: 0 15px;
+    line-height: 61px;
+}
+
+/*====================
+ Header
+====================*/
+
+header {
+    height: 63px;
+    padding: 54px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    background-image: linear-gradient(rgba(44, 46, 56, 0.7), rgba(4, 9, 30, 0.7)), url("../images/header-banner.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* width: 1200px;
+    height: 786px; */
+    background-color: black;
+}
+
+header .social-icons {
+    float: right;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .social-icons a {
+    margin-left: 25px;
+}
+
+header .social-icons i {
+    font-size: 18px;
+    padding-top: 9px;
+    color: white;
+}
+
+
+/*-------------------------------*/
+
+/*     Sidebar nav styles        */
+
+/*-------------------------------*/
+
+.sticky {
+    z-index: 99;
+    position: fixed;
+    font-weight: 600;
+    top: 0;
+    width: 100%;
+    background: black;
+}
+
+.sticky img {
+    transition-duration: 0.5s;
+    padding: 4px 0;
+}
+
+.sticky .header {
+    transition-duration: 0.5s;
+}
+
+.sticky .social-icons {
+    transition-duration: 0.5s;
+}
+
+header .social-icons i:hover {
+    color: rgb(255, 183, 0);
+}
+
+.affix {
+    top: 0;
+    z-index: 9999 !important;
+}
+
+.affix+.container {
+    padding-top: 70px;
+}
+
+.slide-menu .fa-align-left {
+    font-size: 28px;
+    margin-left: 28px;
+    float: right;
+    margin-top: -5px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: rgba(61, 61, 61, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav.hided {
+    width: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(159, 159, 159);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffb700;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.slide-menu {
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        z-index: 9999;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+    }
+}
+
+/* .testheight Not required - unless testing ;) */
+
+.testheight {
+    height: 1200px;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.scrolltop {
+    display: none;
+    width: 100%;
+    z-index: 999;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.scrollUp {
+    /* display: none; */
+    width: 100%;
+    z-index: 999;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.scroll {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ffb700;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.scroll:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+    -moz-transition: -1.5s;
+    -webkit-transition: -1.5s;
+    -o-transition: -1.5s;
+}
+
+.scroll:hover .fa {
+    padding-top: -10px;
+}
+
+.scroll .fa {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-left: 1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/*==================== 
+ Banner
+====================*/
+
+.banner-home {
+    width: 100%;
+    height: 100vh;
+    /* height: 100vh; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* align-items: flex-end; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image:linear-gradient(rgba(rgb(0, 0, 0,0)), rgba(rgba(0, 0, 0, 0))),url(../images/banner.jpg); */
+    /* background-image:linear-gradient(#ffb700, rgba(4,9,30,0.7)),url(../images/banner.jpg); */
+    background-image: linear-gradient(hsl(0, 0%, 0%), rgba(0, 0, 0, 0.2)), url(../images/banner.jpg);
+}
+
+#che,
+#che_port,
+#che_blog {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+#che span,
+#che_port span,
+#che_blog span {
+
+    padding: 14px 15px;
+
+    color: black;
+    /* font-size: 24px; */
+    cursor: pointer;
+    border-radius: 100px;
+    background: #ffb700;
+
+
+}
+
+.banner-home .container {
+    margin-top: 50vh;
+
+}
+
+.banner-home h1 {
+    margin-bottom: 5vh;
+
+}
+
+.chevronTop {
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+.banner-home h1 {
+    padding: 0;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 73px;
+    color: white;
+
+    padding-bottom: 57px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-home h1 span {
+    color: #ffb700;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 5vh;
+
+}
+
+/*==================== 
+ About
+====================*/
+
+.about-us {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 78px;
+    padding-bottom: 108px;
+    text-align: center;
+    background: white;
+}
+
+.about-us h2 {
+    font-size: 74px;
+    font-weight: 100;
+    padding-bottom: 48px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.56);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us p {
+    font-size: 23px;
+    line-height: 45px;
+    padding-bottom: 53px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.about-us a {
+    text-decoration: none;
+}
+
+.about-us .chevron {
+    margin: 0 auto;
+}
+
+
+
+
+/*==================== 
+ Portfolio 
+====================*/
+
+.Portfolio h2 {
+    text-align: center;
+    font-size: 74px;
+    font-weight: 100;
+    padding-bottom: 70px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Portfolio {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.Portfolio .btn {
+    font-size: 16px;
+    margin-right: 28px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Portfolio .btn:hover {
+    color: black;
+    background-color: #ffb700;
+    border: 1px solid white;
+}
+
+.Portfolio .category {
+    text-align: center;
+    padding-bottom: 47px;
+}
+
+.Portfolio .category .btn {
+    border-radius: 0;
+}
+
+.Portfolio .gal {
+    -webkit-column-count: 4;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 4;
+    /* Firefox */
+    column-count: 4;
+    padding-bottom: 86px;
+    padding-right: 0;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 0em;
+}
+
+
+.Portfolio .gal .image {
+    padding: 20px;
+}
+
+.Portfolio .chevron {
+    margin: 0 auto;
+}
+
+.Portfolio .gal img .h2 {
+    padding: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.Portfolio .gal .comment {
+    width: 100%;
+    padding: 0 45px;
+    text-align: justify;
+}
+
+.Portfolio .col-md-12 {
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    .Portfolio .gal {
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+        /* Firefox */
+        column-count: 2;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.84);
+    padding-bottom: 60px;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.52);
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-height: 500px;
+    max-width: 493px;
+    max-width: 500px;
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    opacity: .5;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    background: transparent;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.numbertext img {
+    width: 500px;
+    height: 500px;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*==*/
+
+.Portfolio .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    cursor: zoom-in;
+    /* opacity: 60%; */
+    /* background:linear-gradient(#ffb700, rgba(4,9,30,0.7)); */
+}
+
+.Portfolio .image:hover .overlay {
+    background-color: #ffb700;
+    opacity: 0.6;
+}
+
+.Portfolio .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: .3s ease;
+    /* background-color: rgba(218, 218, 206, 0.68); */
+}
+
+.Portfolio .fa-search-plus {
+    color: white;
+    font-size: 31px;
+    ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: calc(55% - 30px);
+    left: calc(55% - 30px);
+    text-align: center;
+}
+
+.Portfolio .fa-search-plus:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/*==================== 
+ Blog Section
+====================*/
+
+.blog .media-left,
+.media>.pull-left {
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blog .heading {
+    padding-bottom: 90px;
+}
+
+.blog .blog-1 {
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.blog .blog-1 img {
+    height: auto;
+    width: 100%;
+}
+
+.blog img:hover {
+    opacity: .9;
+}
+
+.blog .blog-1 h2 {
+    font-size: 39px;
+    padding: 43px 27px;
+    padding: 43px 20px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: black;
+}
+
+.blog .heading h2,
+.blog .heading h3 {
+    text-align: center;
+    font-weight: 100;
+    color: #8a8a8a;
+    text-transform: uppercase;
+}
+
+.blog .heading h2 {
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+.blog .heading h3 {
+    font-size: 36px;
+}
+
+.blog .media-body .chevron a {
+    margin: 0;
+}
+
+.blog .media-body .media-heading {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog .media-body p {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #acacac;
+}
+
+.blog .media-body p span {
+    padding-top: 20px;
+    color: #00bff3;
+    display: block;
+}
+
+.blog .media-body {
+    padding: 0 20px;
+}
+
+/*==================== 
+ Contact Section
+====================*/
+
+/* address */
+#text-justify {
+    text-align: justify;
+}
+
+.contact address {
+    margin: 0 40px;
+    text-transform: capitalize;
+}
+
+.contact address .adds {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 18px;
+    line-height: 2;
+}
+
+.contact address .open-h {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.contact address .booking {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    padding-bottom: 15px;
+}
+
+.contact address span {
+    font-weight: 100;
+}
+
+.contact address p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-bottom: 4px;
+}
+
+.contact .heading {
+    padding-bottom: 78px;
+}
+
+.contact .heading h2,
+.contact .heading h3 {
+    text-align: center;
+    font-weight: 100;
+    color: #8a8a8a;
+    text-transform: uppercase;
+}
+
+.contact .heading h2 {
+    font-size: 70px;
+    padding-bottom: 15px;
+}
+
+.contact .heading h3 {
+    font-size: 36px;
+}
+
+/* form */
+
+.contact input {
+    border-radius: 0;
+    height: 45px;
+    margin-bottom: 25px;
+    border-radius: 0;
+}
+
+.contact {
+    padding-bottom: 150px;
+}
+
+.contact textarea {
+    resize: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact .btn-primary {
+    width: 256px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 18px 0;
+    color: black;
+    background: #ffb700;
+    border: none;
+}
+
+.contact .btn-primary:hover {
+    color: black;
+    background: rgba(255, 255, 0, 0.4);
+}
+
+::placeholder {
+    color: #3f3f3f;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+::-webkit-placeholder {
+    /* Chrome/Opera/Safari */
+    color: 3f3f3f;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: 3f3f3f;
+}
+
+:-ms-placeholder {
+    /* IE 10+ */
+    color: 3f3f3f;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: 3f3f3f;
+}
+
+/*==================== 
+ Footer
+====================*/
+
+footer {
+    padding-bottom: 124px;
+    padding-top: 122px;
+    background-image: url("../images/footer-bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer .Subscribe {
+    background: white;
+    margin-bottom: 97px;
+}
+
+footer .heading {
+    width: 100%;
+    text-align: center;
+    margin: 0 -20px;
+}
+
+footer .heading h3 {
+    color: black;
+    font-size: 30px;
+    padding-top: 61px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -58px;
+    border-radius: 0;
+}
+
+.input-group .form-control:first-child {
+    width: 86%;
+}
+
+footer form {
+    padding: 47px 0;
+    text-align: center;
+}
+
+element.style {}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn.active,
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .btn-warning:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #ffb70075;
+}
+
+.btn-warning:active:hover {
+    color: black;
+    background: #ffb700
+}
+
+footer .btn-warning {
+    height: 64px;
+    color: black;
+    padding: 0 25px;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #c4c4c4;
+    background: #ffb700;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    color: #d5d5d5;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #d7d7d7;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+}
+
+footer span a {
+    cursor: pointer;
+    color: #ffb700;
+}
+
+footer span a:hover {
+    color: #ffb700;
+}
+
+footer li a {
+    color: #d5d5d5;
+    padding: 20px;
+    display: block;
+    font-size: 13.34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+footer p a {
+    padding: 0;
+}
+
+footer li a:hover {
+    color: #ffb700;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+footer .form-control {
+    height: 64px;
+    border-radius: 0;
+}
+
+/*====== 
+ About-page Start 
+======*/
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.about h1 {
+    color: #a5a5a5;
+    font-size: 74px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.about .image {
+    width: 100%;
+    height: 498px;
+    margin-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/fond.jpg");
+    -moz-box-shadow: 0px 0px 18px -2px rgb(142, 142, 142);
+    -webkit-box-shadow: 0px 0px 18px -2px rgb(142, 142, 142);
+    box-shadow: 0px 0px 18px -2px rgb(142, 142, 142);
+}
+
+.about .about-contant p {
+    font-size: 19px;
+    padding-bottom: 80px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 200;
+    color: #a5a5a5;
+}
+
+@media screen and (max-width: 425px) {
+    .about .image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .portfolio_images_overlay h6 {
+        font-size: 9px;
+        line-height: 2rem;
+        margin: -8px auto;
+    }
+
+    .about .about-contant p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    .post1 h2,
+    .post2 h2,
+    .post3 h2 {
+        font-size: 17px;
+    }
+}
+
+/*====== service-page Section Ended ======*/
+
+#services {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+#services .career-img {
+    width: 185px;
+    height: auto;
+}
+
+#services .contant h3 {
+    color: #a3a3a3;
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 18px;
+}
+
+#services .row {
+    padding-bottom: 100px;
+}
+
+#services .contant p {
+    color: #b0b0b0;
+    font-size: 17px;
+    line-height: 2;
+}
+
+#services h1,
+#contact h1,
+.contact h1 {
+    font-size: 74px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 52px;
+    padding-left: 13px;
+    color: #a3a3a3;
+}
+
+@media screen and (min-width: 768px) {
+    #services .contant {
+        padding: 0 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #services .career-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 40px;
+    }
+
+    #services .contant h3 {
+        font-size: 22px;
+    }
+
+    #services .contant p {
+        text-align: justify
+    }
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Contact CSS stylesheet
+---------------- */
+
+/*---- Contact Section Start ----*/
+
+#contact {
+    padding-top: 96px;
+    padding-bottom: 300px;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 70px;
+    line-height: 40px;
+    color: #a3a3a3;
+}
+
+#contact .btn {
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 25px;
+    margin-top: 27px;
+    border-radius: 0;
+    background: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact .btn:hover {
+    background: rgb(255, 255, 0);
+    color: #888888;
+    font-weight: 400;
+}
+
+#contact .form-control {
+    height: 58px;
+    font-size: 16px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    background: white;
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Blog CSS stylesheet
+---------------- */
+
+/*---- Blog Section Start ----*/
+
+.blog-contant {
+    margin-bottom: 80px;
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Contact CSS stylesheet
+---------------- */
+
+/*---- Contact Section Start ----*/
+
+.contact {
+    padding-bottom: 150px;
+}
+
+.contact h1 {
+    text-align: left;
+}
+
+.contact p {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 70px;
+    line-height: 40px;
+    color: #a3a3a3;
+}
+
+.contact .btn-default {
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 25px;
+    margin-top: 27px;
+    border-radius: 0;
+    background: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .btn:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 300;
+}
+
+.contact .form-control {
+    height: 51px;
+    font-size: 16px;
+    border-radius: 0;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+/*================ Media Query @media screen 1400px ================*/
+
+@media screen and (max-width: 1400px) {
+
+    /*== Banner ==*/
+    .banner-home h1 {
+        line-height: 74px;
+        letter-spacing: 0;
+    }
+
+    /*== Portfolio ==*/
+    .Portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .Portfolio h2 {
+        font-size: 42px;
+        padding-bottom: 40px;
+    }
+
+    .Portfolio .category {
+        padding-bottom: 30px;
+    }
+
+    .Portfolio .gal {
+        padding-bottom: 70px;
+    }
+
+    /*== Blog ==*/
+    .blog {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .blog .heading {
+        padding-bottom: 60px;
+    }
+
+    .blog .media-body .media-heading {
+        padding-bottom: 11px;
+    }
+
+    .blog .media-body p span {
+        padding-top: 16px;
+    }
+
+    .blog .media-body p {
+        padding-bottom: 12px;
+    }
+
+    /*== Contact ==*/
+    .contact .heading {
+        padding-bottom: 60px;
+    }
+
+    .contact {
+        padding-bottom: 125px;
+    }
+
+    .contact .heading {
+        padding-bottom: 30px;
+    }
+
+    /*== Footer ==*/
+    footer {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    footer .heading {
+        padding: 62px 0;
+    }
+
+    footer .Subscribe {
+        background: white;
+        margin-bottom: 60px;
+    }
+
+    footer p {
+        padding-bottom: 60px;
+    }
+
+    .blog-contant {
+        margin-bottom: 50px;
+    }
+
+    footer .heading h3 {
+        padding-top: 0;
+    }
+}
+
+/*================ Media Query @media screen 1024px ================*/
+
+@media screen and (max-width: 1024px) {
+
+    /*== Header ==*/
+    header {
+        height: 0;
+        padding: 45px 0 0 0;
+    }
+
+    /*== Banner ==*/
+    .banner-home h1 {
+        font-size: 51px;
+        line-height: 62px;
+        letter-spacing: 0;
+    }
+
+    /*== About ==*/
+    .about-us h2 {
+        padding-bottom: 30px;
+        font-size: 42px;
+    }
+
+    .about-us p {
+        font-size: 14px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-us {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /*== Portfolio ==*/
+    .Portfolio .btn {
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    /*== Blog ==*/
+    .blog .blog-1 img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .blog .blog-1 h2 {
+        font-size: 28px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .blog .media-list img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .contact .heading h3 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+
+    .blog .heading h2 {
+        font-size: 42px;
+    }
+
+    .blog .heading h3 {
+        font-size: 32px;
+    }
+
+    .blog .heading {
+        padding-bottom: 30px;
+    }
+
+    /*== Contact ==*/
+    .contact .heading h2 {
+        font-size: 42px;
+    }
+
+    .contact {
+        padding-bottom: 50px;
+    }
+
+    .contact .form-control {
+        margin-bottom: 15px;
+    }
+
+    .contact textarea {
+        margin-bottom: 15px;
+    }
+
+    .contact address .adds {
+        font-size: 18px;
+        padding-bottom: 12px;
+        line-height: 25px;
+    }
+
+    .contact address .open-h {
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .contact address p {
+        font-size: 16px;
+        font-weight: 200;
+        padding-bottom: 0;
+    }
+
+    .contact address .booking {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 34px;
+        padding-bottom: 12px;
+    }
+
+    .contact .btn-primary {
+        padding: 14px 0;
+        height: 53px;
+        font-size: 14px;
+    }
+
+    .blog {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .contact .btn-primary {
+        width: 209px;
+    }
+
+    /*==services==*/
+    #services h1,
+    #contact h1,
+    .contact h1 {
+        font-size: 62px;
+    }
+
+    /*== Footer ==*/
+    footer form {
+        padding: 20px 0;
+    }
+
+    footer .Subscribe {
+        background: white;
+        margin-bottom: 30px;
+    }
+
+    footer .heading h3 {
+        color: black;
+        font-size: 24px;
+        padding-top: 23px;
+    }
+
+    footer li a {
+        padding: 11px;
+        font-size: 13.34px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    footer .heading {
+        padding: 13px 0;
+    }
+
+    footer .form-control {
+        height: 51px;
+    }
+
+    footer .btn-warning {
+        height: 51px;
+    }
+
+    footer .btn-group-lg>.btn,
+    .btn-lg {
+        padding: 14px 15px;
+    }
+
+    .banner-home {
+        width: 100%;
+        height: 585px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .input-group .form-control:first-child {
+        width: 83%;
+    }
+
+    .input-group-btn {
+        padding-right: 36px;
+    }
+
+    footer .heading h3 {
+        padding-top: 23px;
+        font-size: 18px;
+    }
+
+    footer .heading {
+        margin: 0px -60px;
+    }
+
+    footer p {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+/*================ Media Query @media screen 786px ================*/
+
+@media screen and (max-width: 768px) {
+
+    /*== Banner ==*/
+    header {
+        height: 0;
+        padding: 28px 0 0 0;
+    }
+
+    .banner-home h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .sticky header .social-icons i {
+        font-size: 16px;
+        padding: 0 0;
+        padding-top: 19px;
+        color: white;
+    }
+
+    .banner-home {
+        height: 500px;
+    }
+
+    /*== About ==*/
+    .about-us h2 {
+        font-size: 40px;
+        padding-bottom: 26px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+
+    .about h1 {
+        font-size: 52px;
+    }
+
+    .about .about-contant p {
+        font-size: 16px;
+        padding-bottom: 40px;
+    }
+
+    .about {
+        padding-top: 60px;
+        padding-bottom: 36px;
+    }
+
+    /*== Portfolio ==*/
+    .Portfolio {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .Portfolio h2 {
+        font-size: 42px;
+    }
+
+    .blog .heading h2 {
+        font-size: 40px;
+    }
+
+    .blog .heading h3 {
+        font-size: 30px;
+    }
+
+    .Portfolio .btn {
+        font-size: 14px;
+        margin-right: 3px;
+    }
+
+    .Portfolio .gal {
+        padding-bottom: 30px;
+    }
+
+    /*== Blog ==*/
+    .blog .heading h2 {
+        font-size: 48px;
+        padding-bottom: 10px;
+    }
+
+    /*== Contact ==*/
+    .contact .heading h2 {
+        font-size: 40px;
+    }
+
+    .contact .heading h3 {
+        font-size: 30px;
+    }
+
+    .contact .btn-primary {
+        width: 185px;
+        height: 53px;
+        padding: 16px 0;
+        margin-bottom: 30px;
+    }
+
+    .contact address {
+        margin: 0 0px;
+        text-transform: capitalize;
+    }
+
+    /*== services ==*/
+    #services h1,
+    #contact h1,
+    .contact h1 {
+        font-size: 52px;
+    }
+
+    #services {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    /*== Footer ==*/
+    .semicolon {
+        display: none;
+    }
+
+    footer .heading h3 {
+        padding-top: 0;
+    }
+
+    footer li a {
+        padding: 11px;
+        font-size: 13.34px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .contact address span {
+        font-weight: 200;
+    }
+
+    footer form .input-group {
+        margin: 0 auto;
+    }
+
+    footer .heading {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    footer .heading {
+        margin: 0 auto;
+    }
+}
+
+/*================ Media Query @media screen 320px ================*/
+
+@media screen and (max-width: 320px) {
+
+    /*== header ==*/
+    header .social-icons a {
+        margin-left: 18px;
+    }
+
+    header .social-icons i {
+        font-size: 18px;
+        padding: 10px 0;
+        color: white;
+    }
+
+    .slide-menu {
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+    /*== About ==*/
+    .about-us h2 {
+        letter-spacing: -4px;
+    }
+
+    .about-us {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact p {
+        font-size: 14px;
+        text-align: justify;
+        padding-bottom: 50px;
+        line-height: 24px;
+        color: #a3a3a3;
+    }
+}
+
+/*================ Media Query @media screen 425px ================*/
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+
+    /*== header ==*/
+    .sticky img {
+        padding: 5px 0;
+    }
+
+    header .social-icons a {
+        margin-left: 10px;
+    }
+
+    .sticky header .social-icons i {
+        font-size: 16px;
+        padding-top: 10px;
+        color: white;
+    }
+
+    /*== Banner ==*/
+    .banner-home {
+        height: 400px;
+    }
+
+    .banner-home h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+
+    /*== About ==*/
+    .about-us h2 {
+        font-size: 34px;
+    }
+
+    .about-us p {
+        font-size: 12px;
+        line-height: 25px;
+        text-align: justify;
+        word-spacing: -0.5px;
+    }
+
+    .about {
+        padding-top: 32px;
+    }
+
+    .about h1 {
+        font-size: 32px;
+        padding-bottom: 33px;
+    }
+
+    .about .about-contant p {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+    /*== Portfolio ==*/
+    .Portfolio h2 {
+        font-size: 31px;
+        font-weight: 200;
+    }
+
+    /*== Blog ==*/
+    .blog .heading h2 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .blog .blog-1 h2 {
+        font-size: 17px;
+        padding: 43px 27px;
+        padding: 20px 0;
+        letter-spacing: 0px;
+    }
+
+    .blog .heading h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .blog .media-body {
+        padding: 5px 0;
+    }
+
+    .blog .blog-1 {
+        padding-bottom: 40px;
+    }
+
+    .blog .media-body .media-heading {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    /*== services ==*/
+    #services h1,
+    #contact h1,
+    .contact h1 {
+        font-size: 44px;
+    }
+
+    #services .row {
+        padding-bottom: 50px;
+    }
+
+    #services {
+        padding-top: 40px;
+    }
+
+    #services h1,
+    #contact h1,
+    .contact h1 {
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+
+    #services .contant p {
+        text-align: left;
+        line-height: 27px;
+    }
+
+    .chevron {
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+
+    .chevron span {
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    .blog {
+        padding-bottom: 50px;
+    }
+
+    /*== Contact ==*/
+    .contact .heading h2 {
+        font-size: 26px;
+    }
+
+    .contact .heading h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .contact .form-control {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .contact .btn-default {
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    .contact .btn-primary {
+        width: 148px;
+        height: 49px;
+        font-size: 12px;
+    }
+
+    .contact address .adds {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .contact address .open-h {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+
+    .contact address .booking {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact {
+        padding-bottom: 60px;
+    }
+
+    footer .heading h3 {
+        font-size: 18px;
+    }
+
+    footer li a {
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    footer ul {
+        padding-bottom: 30px;
+    }
+
+    footer p {
+        padding-bottom: 30px;
+    }
+
+    footer p {
+        margin: 0;
+        padding: 0;
+        color: #c0c0c0;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    footer .heading h3 {
+        padding-top: 0;
+    }
+
+    footer form {
+        padding: 14px 0;
+    }
+
+    footer {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    footer li {
+        display: block;
+    }
+
+    footer .form-control {
+        height: 42px;
+        border-radius: 0;
+    }
+
+    footer .btn-warning {
+        height: 42px;
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    footer form {
+        padding: 14px 20px;
+    }
+
+    footer .heading {
+        margin: 0 auto;
+    }
+
+    .blog .blog-1 img {
+        height: 200px;
+    }
+
+    .blog .media-list img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .scroll .fa {
+        font-size: 20px;
+    }
+
+    #contact {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    #contact p {
+        font-size: 14px;
+        text-align: left;
+        padding-bottom: 70px;
+        line-height: 25px;
+    }
+
+    .sticky header .social-icons i {
+        font-size: 16px;
+        padding: 0 0;
+        padding-top: 19px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Portfolio h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        font-weight: 200;
+    }
+
+    .about-us h2 {
+        font-size: 30px;
+    }
+
+    .blog .heading h3 {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+    }
+
+    .blog .heading h2 {
+        font-size: 22px;
+    }
+
+    .blog .blog-1 h2 {
+        line-height: 25px;
+    }
+
+    .blog .blog-1 {
+        padding-bottom: 20px;
+    }
+
+    #services h1,
+    #contact h1,
+    .contact h1 {
+        font-size: 28px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    #contact .form-control {
+        height: 45px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    #contact .btn {
+        height: 40px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    #services .contant p {
+        text-align: left;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .contact p {
+        font-size: 14px;
+        text-align: left;
+        padding-bottom: 20px;
+        line-height: 30px;
+        color: #a3a3a3;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact .heading h2 {
+        font-size: 29px;
+    }
+
+    .blog .heading h2 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .Portfolio h2 {
+        font-size: 23px;
+    }
+
+    .Portfolio .btn {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+
+    .Portfolio {
+        padding-bottom: 0;
+    }
+
+    #services .contant p {
+        font-size: 14px;
+    }
+
+    #services {
+        padding-bottom: 0;
+    }
+}
+
+/*======*/
+
+.load-more {
+    text-align: center;
+}
+
+.load-more .btn {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    color: #b8b8b8;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 100px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background: rgba(231, 231, 231, 0.56);
+}
+
+.load-more .btn:hover {
+    color: gray;
+    background-color: #ffb700;
+}
+
+.blog .load-more .btn {
+    margin-bottom: 0;
+}

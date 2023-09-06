@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Corporate Agency Website template">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jquery">
+    <meta name="author" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio home</title>
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: custom Styles -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Google Font and font-awesome -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,400i,500,500i,600,700,900"
+      rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+           
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+    <style>
+            .image{
+              text-align: center;
+            }
+            .image a{
+              text-align: center;
+            }
+            #article-img{
+              width: 35vw;
+            }
+            .blog .blog-1 p{
+              text-align: left;
+            }
+            .front-img img{
+              border-radius: 50%;
+              height: 100px;
+              width: 100px;
+            }
+            .back-img img{
+              border-radius: 50%;
+              height: 100px;
+              width: 100px;
+            }
+            .padding-50{
+              padding: 0 50px;
+            }
+            @media screen and (min-width: 992px) {
+              
+           
+            .gal{
+              display: grid;
+              grid-template-columns: repeat(auto-fit,minmax(21vw,1fr));
+            }
+            .item{
+              max-width: 19vw;
+              position: relative;
+            }
+            .item a{
+              cursor: pointer;
+              position: absolute;
+              bottom: 0;
+            }
+           }
+          </style>
+  </head>
+
+  <!-- Body Start-->
+
+  <body>
+
+    <!-- Header section Start-->
+    <header class="top">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="technology.html">Technology</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <nav id="navbar">
+        <!-- container Start-->
+        <div class="container">
+          <!--Row Start-->
+          <div class="row">
+            <div class="col-xs-2 col-md-1">
+              <a href="#"><i class="fa fa-home fa-4x" style="color:#ffb700;"
+                  aria-hidden="true"></i></a>
+
+            </div>
+            <div class="col-xs-10 col-md-11">
+              <div class="social-icons">
+                <!-- Page Content -->
+                <div id="page-content-wrapper">
+                  <a href="https://www.linkedin.com/in/agnès-cloud-1a290a1b4/"
+                    target="_blank"><i class="fa fa-linkedin"
+                      aria-hidden="true"></i></a>
+                  <a href="https://github.com/A-make-cloud" target="_blank"><i
+                      class="fa fa-github"
+                      aria-hidden="true"></i></a>
+                  <!-- <a href="#"><i class="fa fa-twitter" target="_blank" aria-hidden="true"></i></a> -->
+                  <a href="#"><i class="fa fa-500px" aria-hidden="true"></i></a>
+                  <a href="https://www.pinterest.fr/Agnes_Cloud/_saved/"
+                    target="_blank"><i class="fa fa-pinterest"
+                      aria-hidden="true"></i></a>
+                  <span class="slide-menu" onclick="openNav()"><i
+                      class="fa fa-align-left" aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Row Ended-->
+        </div>
+        <!-- container Ended-->
+      </nav>
+    </header>
+    <!-- Header section Ended-->
+    <section class="banner-home">
+      <!-- Banner section Start-->
+
+      <!-- container Start-->
+      <div class="container">
+        <!--Row Start-->
+        <div class="row">
+          <div class="col-sm-12" data-aos="fade-left" data-aos-duration="1000">
+            <h1>Bienvenue sur <span> mon</span><br />
+              portfolio<br />
+              Contactez <span>moi.</span>
+            </h1>
+          </div>
+          <!-- <div id="che">
+            <a class="chevronTop" href="#about"><span>></span></a>
+          </div> -->
+          <div id="che">
+            <a class="chevronTop" href="#about"><span> <i
+                  class="fa fa-chevron-down"></i>
+              </span></a>
+          </div>
+
+        </div>
+        <!--Row Ended-->
+      </div>
+
+      <!-- container Ended-->
+    </section>
+    <!-- Banner section Ended-->
+    <div id="about"></div>
+    <!-- About section Start-->
+    <section class="about-us">
+      <!-- container Start-->
+      <div class="container">
+        <!--Row Start-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12" data-aos="fade-up"
+            data-aos-duration="1000">
+            <h2>Bonjour, je suis Agnès</h2>
+            <p>
+
+              Je suis une développeuse web: j'ai démarré ma reconversion
+              professionnelle depuis 2020.
+
+              Je suis experte pour offrir des solutions aux problèmes. D'ailleurs,
+              j'ai été actif dans mon apprentissage des nouvelles technologies:
+              j'ai appris en auto-didacte et en centre de formation des langages
+              en développement web.
+              Je sais créer des sites web statics, interactifs, des applications
+              et proposer des solutions numériques adaptés aux besoins des
+              entreprises, associations et particuliers. Je suis familiarisée à
+              l'utilisation de Cms et framework ainsi qu'aux bases de données.
+
+              Au préalable, mon expertise résidait dans l'administration des
+              ventes et approvisionnements de boutiques partenaires de la marque
+              des sociétés pour lesquelles je travaillais. J'ai une vaste
+              expérience couvrant différentes fonctions, à travers divers
+              niveaux de marché allant des marques internationales aux
+              entreprises de taille moyenne. Cela m'a donné une culture d'entreprise
+              et des compétences qui peuvent être transférées pour servir de
+              consultante en développement web, analyser la demande et concevoir
+              un site adapté dans des domaines variés.
+
+            </p>
+            <!-- <div class="chevron">
+              <a href="portfolio.html"><span>></span></a>
+            </div> -->
+            <div id="che_port">
+              <a class="chevronTop" href="#portfolio"><span> <i
+                    class="fa fa-chevron-down"></i>
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <!--Row Ended-->
+      </div>
+      <!-- container Ended-->
+    </section>
+    <hr>
+    <!-- About section Ended-->
+    <div id="portfolio"></div>
+    <!-- portfolio section Start-->
+    <section class="Portfolio">
+      <!-- container Start-->
+      <div class="container-fluid">
+        <h2>visitez mon portfolio</h2>
+        <section class="padding-50">
+          <div class="row" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-12 col-lg-6">
+              <!-- artigo em destaque -->
+              <div class="blog-1">
+                <div class="media">
+                  <div class="pull-left front-img"><a href="#front-end"><img
+                        src="images/screen-front.png" width="320px;"
+                        height="220px;" alt="map"
+                        class="thumb"></a>
+                  </div>
+                  <div class="media-body">
+                    <a href="#front-end">
+                      <h3 class="media-heading">présentation front</h3>
+                    </a>
+                    <p class="by-author">Site <span>Vitrine</span></p>
+                    <a href="#front-end"> <i class="fa fa-chevron-down fa-2x"></i></a>
+                    <!-- <div class="chevron"> <a href="#front-end"><span><i
+                          class="fa fa-chevron-down"></i></span></a></div> -->
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.featured-article -->
+            </div>
+
+            <div class=" col-md-12 col-lg-6">
+              <div class="media-list main-list">
+                <div class="media">
+                  <div class="pull-left back-img"><a href="portfolio.html"><img
+                        src="images/screen-front.png" width="320px;"
+                        height="220px;" alt="map" class="thumb"></a>
+                  </div>
+
+                  <div class="media-body">
+                    <a href="portfolio.html">
+                      <h3 class="media-heading">présentation back-end </h3>
+
+                    </a>
+                    <p class="by-author">Site <span>Interactifs</span></p>
+                    <a href="portfolio.html"> <i
+                        class="fa fa-chevron-right fa-2x"></i></a>
+                    <!-- <div class="chevron"><a href="portfolio.html"><span>></span></a></div> -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Row Start -->
+        <!-- <div class="row padding-50" id="front-end"> -->
+        <div class=" padding-50" id="front-end">
+          <div class="col-md-12">
+            <div class="gal">
+              <div class="item">
+                <div data-tag='E-commerce' class="image">
+                  <img src="images/bioshop_750.png"
+                    class="img-responsive cursor"
+                    alt="portfolio-2">
+                  <div>
+                    <h4>Bioshop</h4>
+                    <p>Html5, CSS3, JavaScript</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(11)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a target="_blank" class="liens"
+                  href="https://a-make-cloud.github.io/bio-shop-js/">https://bio-shop.fr/</a>
+                <div data-tag='E-commerce' class="image">
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/ispace_750.jpg" class="img-responsive cursor"
+                  alt="ispace">
+                <div>
+                  <h4>Furniture</h4>
+                  <p>Html5, CSS3</p>
+                </div>
+                <div onclick="openModal();currentSlide(12)" class="overlay">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </div>
+
+                <a target="_blank" class="liens"
+                  href="https://a-make-cloud.github.io/ispace/">https://ispace.com/</a>
+              </div>
+              <div class="item">
+
+                <div data-tag='mode' class="image">
+                  <img src="images/pixDesign_750.jpg"
+                    class="img-responsive cursor" alt="pixDesign">
+                  <div>
+                    <h4>PixDesign</h4>
+                    <p>Html5, CSS3, Bootstrap</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(13)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens" target="_blank"
+                  href="https://a-make-cloud.github.io/Pix/">https://photo-Pix.fr/</a>
+              </div>
+              <div class="item">
+                <div data-tag='informatique' class="image">
+                  <img src="images/fylo_dark_750.jpg"
+                    class="img-responsive cursor" alt="fylo">
+                  <div>
+                    <h4>Cloud storage</h4>
+                    <p>Html5, CSS3</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(4)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens"
+                  href="https://a-make-cloud.github.io/fylo_dark/"
+                  target="_blank">https://service-fylo_dark.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='informatique' class="image">
+                  <img src="images/clipboard_750.jpg"
+                    class="img-responsive cursor" alt="clipboard">
+                  <div>
+                    <h4>Clipboard</h4>
+                    <p>Html5, CSS3</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(3)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens" href="https://a-make-cloud.github.io/clipbord/"
+                  target="_blank">https://service-clipbord.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='E-commerce' class="image"
+                  style="margin: -11px 0px;">
+                  <img src="images/room_750.jpg" class="img-responsive cursor"
+                    alt="room">
+                  <div>
+                    <h4>Carousel</h4>
+                    <p>Html5, CSS3, Bootstrap</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(6)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a target="_blank" class="liens"
+                  href="https://a-make-cloud.github.io/room/">https://showroom-room.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='paysages' class="image">
+                  <img src="images/onemillion_750.jpg"
+                    class="img-responsive cursor" alt="on">
+                  <div>
+                    <h4>Floride</h4>
+                    <p>Html5, CSS3</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(9)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a target="_blank" class="liens"
+                  href="https://a-make-cloud.github.io/onemillion/">https://university-onemillion.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='informatique' class="image">
+                  <img src="images/popIn_750.jpg"
+                    class="img-responsive cursor"
+                    alt="popin">
+                  <div>
+                    <h4>Animation Popin</h4>
+                    <p>Html5, CSS3, JavaScript</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(10)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a target="_blank" class="liens"
+                  href="https://a-make-cloud.github.io/modal/">https://a-make-cloud.github.io/modal/</a>
+              </div>
+              <div class="item">
+                <div data-tag='paysages' class="image">
+                  <img src="images/halcyondays.png"
+                    class="img-responsive cursor"
+                    alt="halcyondays">
+                  <div>
+                    <h4>Mountain</h4>
+                    <p>Symfony5</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(5)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens"
+                  href="https://a-make-cloud.github.io/Fylo_light/"
+                  target="_blank">https://service-Fylo_light.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='caricature' class="image">
+                  <img src="images/Fylo_light_750.png"
+                    class="img-responsive cursor"
+                    alt="licorne">
+                  <div>
+                    <h4>Fylo Light</h4>
+                    <p>Html5, CSS3,Bootstrap</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(15)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens"
+                  href="https://a-make-cloud.github.io/Fylo_light/"
+                  target="_blank">https://service-Fylo_light.com/</a>
+              </div>
+              <div class="item">
+
+                <div data-tag='mode' class="image">
+                  <img src="images/minimo_750.jpg"
+                    class="img-responsive cursor"
+                    alt="minimo">
+                  <div>
+                    <h4>Showcase site</h4>
+                    <p>Html5, CSS3</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(14)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a href="https://a-make-cloud.github.io/minimos/"
+                  class="liens"
+                  target="_blank">https://shop-minimo.com/</a>
+              </div>
+              <div class="item">
+                <div data-tag='E-commerce' class="image">
+                  <img src="images/Sport_-com_750.jpg"
+                    class="img-responsive cursor" alt="sportcom">
+                  <div>
+                    <h4>Martial art accessories</h4>
+                    <p>Html5, CSS3</p>
+                  </div>
+                  <div onclick="openModal();currentSlide(2)" class="overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <a class="liens" href="https://a-make-cloud.github.io/Gant/"
+                  target="_blank">https://sportcom-online.fr/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row Ended -->
+
+        <!-- Modal pop-up-box Start -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <!-- Modal-content Start-->
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 13</div>
+              <img src="images/Cupcake_page.png" alt="portfolio-1"
+                style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 13</div>
+              <img src="images/sportCom_page.png" alt="portfolio-4"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 13</div>
+              <img src="images/clipboard_page.png" alt="clipboard"
+                style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 13</div>
+              <img src="images/fylo_page.png" alt="cupcake"
+                style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 13</div>
+              <img src="images/halcyondays.png" alt="halcyondays"
+                style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 13</div>
+              <img src="images/room_page.png" alt="room" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 13</div>
+              <img src="images/Desert.png" alt="popin" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 13</div>
+              <img src="images/zozor_page.png" alt="zozor"
+                style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 13</div>
+              <img src="images/onemillion_page.png" alt="onemillion"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">10 / 13</div>
+              <img src="images/popIn_750.jpg" alt="roomPage"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">11 / 13</div>
+              <img src="images/bioshop_page.png" alt="bioshop"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">12 / 13</div>
+              <img src="images/ispace_page.png" alt="portfolio-10"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">13 / 13</div>
+              <img src="images/pixDesign.png" alt="portfolio-10"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">14 / 14</div>
+              <img src="images/minimo.png" alt="portfolio-10"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">15/ 15</div>
+              <img src="images/Fylo_light_page.png" alt="fylo light"
+                style="width: 70%; margin: 0 75px;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <!-- Modal-content Ended-->
+        </div>
+        <!-- Modal pop-up-box Ended -->
+        <!-- <div class="chevron">
+          <a href="portfolio.html"><span>></span></a>
+        </div> -->
+        <div id="che_blog">
+          <a class="chevronTop" href="#blog"><span> <i
+                class="fa fa-chevron-down"></i>
+            </span></a>
+        </div>
+      </div>
+
+      <!-- container Ended-->
+    </section>
+
+    <hr />
+    <!-- Portfolio section Ended -->
+    <div id="blog"></div>
+    <!-- Blog section Start -->
+    <section class="blog">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading">
+              <h2>Lisez mes articles.</h2>
+              <h3>Centre d'intérêt et articles</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+          <div class="col-md-12 col-lg-6">
+            <!-- artigo em destaque -->
+            <div class="blog-1">
+              <a href="contact.html"><img src="images/algorithme.png"
+                  alt="algorithme" class="thumb" id="article-img"></a>
+              <a href="support.html">
+                <!-- <h2>Beautiful girl posing for photoshoot</h2> -->
+                <h2>Fonctionnement d’un algorithme</h2>
+                <p>Un algorithme est une suite finie et non ambiguë d'instructions
+                  et d'opérations permettant de résoudre une classe de
+                  problèmes</p>
+                <p>Un algorithme est avant tout un ensemble de méthodes
+                  utilisées par un ordinateur pour résoudre un problème.</p>
+                <p> Un algorithme utilise des paramètres tels que votre
+                  historique de recherche, le nombre de visites sur un site,
+                  le nombre de liens pointant vers le site</p>
+                <!-- <h2>Beautiful girl wearing a chale, dark glasses and posing for photoshoot</h2> -->
+              </a>
+            </div>
+            <!-- /.featured-article -->
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="media-list main-list">
+              <div class="media">
+                <div class="pull-left"><a href="contact.html"><img
+                      src="images/organic-map.jpg" width="320px;"
+                      height="420px;" alt="map" class="thumb"></a>
+                </div>
+                <div class="media-body">
+                  <a href="support.html">
+                    <h3 class="media-heading">Organic Maps: cartes hors
+                      ligne et navigateur GPS</h3>
+                  </a>
+                  <p class="by-author">Suivez <span>Moi</span></p>
+                  <div class="chevron"><a href="contact.html"><span>></span></a></div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="pull-left"><a href="support.html"><img
+                      src="images/ai.png" width="320px;"
+                      height="420px;" alt="map"
+                      class="thumb"></a>
+                </div>
+                <div class="media-body">
+                  <a href="support.html">
+                    <h3 class="media-heading">Enseigner avec l'intelligence
+                      artificielle</h3>
+                  </a>
+                  <p class="by-author">Suivez <span>Moi</span></p>
+                  <div class="chevron"><a href="contact.html"><span>></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog section Ended-->
+
+    <!-- Contact section Start -->
+
+    <!-- Contact section Ended-->
+
+    <!-- Footer section Start -->
+    <footer>
+      <!-- container Start-->
+      <div class="container">
+        <div class="Subscribe" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="heading">
+                <h3>Contactez-moi</h3>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <form class="form-inline">
+                <div class="input-group">
+
+                  <h4 class="mb-5">Mon adresse de
+                    contact</h4>
+                  <h5>agnes.cloud@ik.me</h5>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li class="semicolon">:</li>
+            <li><a href="service.html">services</a></li>
+            <li class="semicolon">:</li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li class="semicolon">:</li>
+            <li><a href="technology.html">technologies</a></li>
+            <li class="semicolon">:</li>
+            <li><a href="contact.html">contact</a></li>
+            <li class="semicolon">:</li>
+            <li><a href="support.html">support</a></li>
+          </ul>
+          <p>tous droits réservés © 2023 <span><a href="#" target="_blank">Portfolio</a></span>Crée
+            par <span><a
+                href="#" target="_blank">Agnès Cloud</a></span></p>
+        </div>
+        <div class="footer-logo">
+          <a href="#"><i class="fa fa-home fa-4x" style="color:#ffb700;"
+              aria-hidden="true"></i></a>
+
+        </div>
+      </div>
+      <!-- container Ended-->
+    </footer>
+    <!-- Footer section Ended -->
+
+    <!-- Return to Top -->
+    <div class='scrolltop'>
+      <div class='scroll icon'>
+        <i class="fa fa-long-arrow-up"></i></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/animate.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+    //Lightbox (Modal Image Gallery)
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active");
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  </body>
+  <!-- Body Ended -->
+
+</html>
